@@ -99,9 +99,6 @@
       <SubType>Code</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="artsen.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
     <Compile Include="Huisartsen.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
