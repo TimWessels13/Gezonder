@@ -12,7 +12,6 @@ namespace Gezonder
         public int KlantAdres { get; set; }
         public int KlantPostcode { get; set; }
         public int KlantPlaats { get; set; }
-        public int Medicatie { get; set; }
         public int ArtsNaam { get; set; }
         public int MedicatieNaam { get; set; }
         public int VerzekeraarNaam { get; set; }

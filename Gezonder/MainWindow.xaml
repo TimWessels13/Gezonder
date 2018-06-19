@@ -9,6 +9,20 @@
     <Grid>
         <Grid>
             <DataGrid HorizontalAlignment="Left" Height="201" Margin="10,208,0,0" VerticalAlignment="Top" Width="388"/>
+            <Button Content="Verleng contract" HorizontalAlignment="Left" Margin="403,389,0,0" VerticalAlignment="Top" Width="168"/>
+            <Button Content="Wijzig gegevens" HorizontalAlignment="Left" Margin="614,389,0,0" VerticalAlignment="Top" Width="168"/>
+            <Label Content="Label" HorizontalAlignment="Left" Margin="403,208,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
+            <Label Content="Label" HorizontalAlignment="Left" Margin="403,236,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
+            <Label Content="Label" HorizontalAlignment="Left" Margin="403,264,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
+            <Label Content="Label" HorizontalAlignment="Left" Margin="403,292,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
+            <Label Content="Label" HorizontalAlignment="Left" Margin="403,320,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
+            <Label Content="Label" HorizontalAlignment="Left" Margin="403,348,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="614,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="614,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="614,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="614,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="614,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="614,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
         </Grid>
         <DataGrid HorizontalAlignment="Left" Height="196" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"/>
     </Grid>
