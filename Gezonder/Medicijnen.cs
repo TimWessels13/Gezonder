@@ -8,5 +8,8 @@ namespace Gezonder
 {
     class Medicijnen
     {
+        public bool MedicatieNaam { get; set; }
+        public bool Dosis { get; set; }
+
     }
 }

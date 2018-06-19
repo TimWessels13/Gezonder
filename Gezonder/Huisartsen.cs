@@ -8,10 +8,10 @@ namespace Gezonder
 {
     class Huisartsen
     {
-        bool ArtsNaam;
-        bool ArtsAdres;
-        bool ArtsPostcode;
-        bool ArtsPlaats;
-        bool ContractTot;
+        public bool ArtsNaam { get; set; }
+        public bool ArtsAdres { get; set; }
+        public bool ArtsPostcode { get; set; }
+        public bool ArtsPlaats { get; set; }
+        public bool ContractTot { get; set; }
     }
 }
