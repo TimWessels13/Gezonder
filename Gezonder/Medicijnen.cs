@@ -8,8 +8,8 @@ namespace Gezonder
 {
     class Medicijnen
     {
-        public bool MedicatieNaam { get; set; }
-        public bool Dosis { get; set; }
+        public int MedicatieNaam { get; set; }
+        public double Dosis { get; set; }
 
     }
 }

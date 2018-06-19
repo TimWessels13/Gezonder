@@ -148,6 +148,10 @@
     <None Include="EF.Reverse.POCO.Core.ttinclude" />
     <None Include="EF.Reverse.POCO.ttinclude" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Huisartsen.datasource" />
+    <None Include="Properties\DataSources\Klanten.datasource" />
+    <None Include="Properties\DataSources\Medicijnen.datasource" />
+    <None Include="Properties\DataSources\Zorgverzekeraars.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -8,13 +8,13 @@ namespace Gezonder
 {
     class Klanten
     {
-        public bool KlantNaam { get; set; }
-        public bool KlantAdres { get; set; }
-        public bool KlantPostcode { get; set; }
-        public bool KlantPlaats { get; set; }
-        public bool Medicatie { get; set; }
-        public bool ArtsNaam { get; set; }
-        public bool MedicatieNaam { get; set; }
-        public bool VerzekeraarNaam { get; set; }
+        public int KlantNaam { get; set; }
+        public int KlantAdres { get; set; }
+        public int KlantPostcode { get; set; }
+        public int KlantPlaats { get; set; }
+        public int Medicatie { get; set; }
+        public int ArtsNaam { get; set; }
+        public int MedicatieNaam { get; set; }
+        public int VerzekeraarNaam { get; set; }
     }
 }

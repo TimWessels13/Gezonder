@@ -8,8 +8,8 @@ namespace Gezonder
 {
     class Zorgverzekeraars
     {
-        public bool VerzekeraarNaam { get; set; }
-        public bool VerzekeraarAdres { get; set; }
-        public bool VerzekeraarBedrag { get; set; }
+        public int VerzekeraarNaam { get; set; }
+        public int VerzekeraarAdres { get; set; }
+        public int VerzekeraarBedrag { get; set; }
     }
 }
