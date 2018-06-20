@@ -29,6 +29,9 @@ namespace Gezonder
             this.ArtsNaam = ArtsNaam;
             this.MedicatieNaam = MedicatieNaam;
             this.VerzekeraarNaam = VerzekeraarNaam;
+            
         }
+
+       
     }
 }
