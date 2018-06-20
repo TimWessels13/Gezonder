@@ -84,11 +84,6 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </ApplicationDefinition>
-    <Compile Include="ZorgDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ZorgDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ZorgDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -166,17 +161,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="ZorgDataSet.xsc">
-      <DependentUpon>ZorgDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="ZorgDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ZorgDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ZorgDataSet.xss">
-      <DependentUpon>ZorgDataSet.xsd</DependentUpon>
     </None>
     <None Include="ZorgDataSet1.xsc">
       <DependentUpon>ZorgDataSet1.xsd</DependentUpon>
