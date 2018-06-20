@@ -8,10 +8,10 @@ namespace Gezonder
 {
     class Huisartsen
     {
-        public int ArtsNaam { get; set; }
-        public int ArtsAdres { get; set; }
-        public int ArtsPostcode { get; set; }
-        public int ArtsPlaats { get; set; }
-        public int ContractTot { get; set; }
+        public string ArtsNaam { get; set; }
+        public string ArtsAdres { get; set; }
+        public string ArtsPostcode { get; set; }
+        public string ArtsPlaats { get; set; }
+        public string ContractTot { get; set; }
     }
 }

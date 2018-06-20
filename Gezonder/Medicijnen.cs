@@ -8,7 +8,7 @@ namespace Gezonder
 {
     class Medicijnen
     {
-        public int MedicatieNaam { get; set; }
+        public string MedicatieNaam { get; set; }
         public double Dosis { get; set; }
 
     }
