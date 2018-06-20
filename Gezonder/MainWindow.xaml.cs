@@ -40,5 +40,10 @@ namespace Gezonder
             // Load data by setting the CollectionViewSource.Source property:
             // klantenViewSource.Source = [generic data source]
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

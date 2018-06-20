@@ -16,6 +16,18 @@ namespace Gezonder
         public int MedicatieNaam { get; set; }
         public int VerzekeraarNaam { get; set; }
 
-        List<Klanten> K = new List<Klanten>();
+       
+   
+
+        public Klanten(string KlantNaam, string KlantAdres, string KlantPostcode, string KlantPlaats, string ArtsNaam, string MedicatieNaam, string  VerzekeraarNaam)
+        {
+            this.v1 = v1;
+            this.v2 = v2;
+            this.v3 = v3;
+            this.v4 = v4;
+            this.v5 = v5;
+            this.v6 = v6;
+            this.v7 = v7;
+        }
     }
 }

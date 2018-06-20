@@ -29,6 +29,6 @@
             <Button x:Name="Button2" Content="Print labels" HorizontalAlignment="Left" Margin="533,389,0,0" VerticalAlignment="Top" Width="119"/>
             <Button x:Name="Button3" Content="Wijzig gegevens" HorizontalAlignment="Left" Margin="663,389,0,0" VerticalAlignment="Top" Width="119"/>
         </Grid>
-        <DataGrid HorizontalAlignment="Left" Height="196" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" ItemsSource="{Binding}"/>
+        <DataGrid HorizontalAlignment="Left" Height="196" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" ItemsSource="{Binding}" SelectionChanged="DataGrid_SelectionChanged"/>
     </Grid>
 </Window>
