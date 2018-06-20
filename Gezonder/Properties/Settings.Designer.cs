@@ -33,5 +33,16 @@ namespace Gezonder.Properties {
                 return ((string)(this["ArtsConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Zorg.mdf;Inte" +
+            "grated Security=True;Connect Timeout=30")]
+        public string ZorgConnectionString {
+            get {
+                return ((string)(this["ZorgConnectionString"]));
+            }
+        }
     }
 }

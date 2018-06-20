@@ -84,6 +84,11 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </ApplicationDefinition>
+    <Compile Include="ZorgDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZorgDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Zorgverzekeraars.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -157,6 +162,17 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="ZorgDataSet.xsc">
+      <DependentUpon>ZorgDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ZorgDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZorgDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZorgDataSet.xss">
+      <DependentUpon>ZorgDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -189,9 +205,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Medicijnen.cs</LastGenOutput>
     </Content>
+    <Content Include="Zorg.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Zorgverzekeraars.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Zorgverzekeraars.cs</LastGenOutput>
+    </Content>
+    <Content Include="Zorg_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Zorg.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
