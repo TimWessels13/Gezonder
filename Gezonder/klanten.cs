@@ -16,10 +16,6 @@ namespace Gezonder
         public string MedicatieNaam { get; set; }
         public string VerzekeraarNaam { get; set; }
 
-       
-       
-   
-
         public Klanten(string KlantNaam, string KlantAdres, string KlantPostcode, string KlantPlaats, string ArtsNaam, string MedicatieNaam, string  VerzekeraarNaam)
         {
             this.KlantNaam = KlantNaam;
