@@ -9,26 +9,55 @@
     <Window.Resources>
         <CollectionViewSource x:Key="huisartsenViewSource" d:DesignSource="{d:DesignInstance {x:Type local:Huisartsen}, CreateList=True}"/>
         <CollectionViewSource x:Key="klantenViewSource" d:DesignSource="{d:DesignInstance {x:Type local:Klanten}, CreateList=True}"/>
+        <local:ZorgDataSet1 x:Key="zorgDataSet1"/>
+        <CollectionViewSource x:Key="klantViewSource" Source="{Binding Klant, Source={StaticResource zorgDataSet1}}"/>
+        <CollectionViewSource x:Key="huisartsViewSource" Source="{Binding Huisarts, Source={StaticResource zorgDataSet1}}"/>
     </Window.Resources>
     <Grid DataContext="{StaticResource klantenViewSource}">
         <Grid DataContext="{StaticResource huisartsenViewSource}">
-            <DataGrid HorizontalAlignment="Left" Height="201" Margin="10,208,0,0" VerticalAlignment="Top" Width="388" ItemsSource="{Binding}"/>
-            <Button x:Name="Button1" Content="Verleng contract" HorizontalAlignment="Left" Margin="403,389,0,0" VerticalAlignment="Top" Width="119"/>
-            <Label x:Name="Label1" Content="Label" HorizontalAlignment="Left" Margin="403,208,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
-            <Label x:Name="Label2" Content="Label" HorizontalAlignment="Left" Margin="403,236,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
-            <Label x:Name="Label3" Content="Label" HorizontalAlignment="Left" Margin="403,264,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
-            <Label x:Name="Label4" Content="Label" HorizontalAlignment="Left" Margin="403,292,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
-            <Label x:Name="Label5" Content="Label" HorizontalAlignment="Left" Margin="403,320,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
-            <Label x:Name="Label6" HorizontalAlignment="Left" Margin="403,348,0,0" VerticalAlignment="Top" Width="168" Height="23" Content="Label"/>
+            <Button x:Name="Button1" Content="Verleng contract" HorizontalAlignment="Left" Margin="417,389,0,0" VerticalAlignment="Top" Width="119"/>
+            <Label x:Name="Label1" Content="Label" HorizontalAlignment="Left" Margin="441,208,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
+            <Label x:Name="Label2" Content="Label" HorizontalAlignment="Left" Margin="441,236,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
+            <Label x:Name="Label3" Content="Label" HorizontalAlignment="Left" Margin="441,264,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
+            <Label x:Name="Label4" Content="Label" HorizontalAlignment="Left" Margin="441,292,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
+            <Label x:Name="Label5" Content="Label" HorizontalAlignment="Left" Margin="441,320,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
+            <Label x:Name="Label6" HorizontalAlignment="Left" Margin="441,348,0,0" VerticalAlignment="Top" Width="168" Height="23" Content="Label"/>
             <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="23" Margin="614,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
             <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="23" Margin="614,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
             <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Height="23" Margin="614,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
             <TextBox x:Name="TextBox4" HorizontalAlignment="Left" Height="23" Margin="614,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
             <TextBox x:Name="TextBox5" HorizontalAlignment="Left" Height="23" Margin="614,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
             <TextBox x:Name="TextBox6" HorizontalAlignment="Left" Height="23" Margin="614,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
-            <Button x:Name="Button2" Content="Print labels" HorizontalAlignment="Left" Margin="533,389,0,0" VerticalAlignment="Top" Width="119"/>
+            <Button x:Name="Button2" Content="Print labels" HorizontalAlignment="Left" Margin="540,389,0,0" VerticalAlignment="Top" Width="119"/>
             <Button x:Name="Button3" Content="Wijzig gegevens" HorizontalAlignment="Left" Margin="663,389,0,0" VerticalAlignment="Top" Width="119"/>
+            <DataGrid x:Name="klantDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource klantViewSource}}" Margin="10,10,10,216" RowDetailsVisibilityMode="VisibleWhenSelected">
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="klantIdColumn" Binding="{Binding KlantId}" Header="Klant Id" Width="SizeToHeader"/>
+                    <DataGridTextColumn x:Name="klantNaamColumn" Binding="{Binding KlantNaam}" Header="Klant Naam" Width="SizeToHeader"/>
+                    <DataGridTextColumn x:Name="klantAdresColumn" Binding="{Binding KlantAdres}" Header="Klant Adres" Width="SizeToHeader"/>
+                    <DataGridTextColumn x:Name="klantPostcodeColumn" Binding="{Binding KlantPostcode}" Header="Klant Postcode" Width="SizeToHeader"/>
+                    <DataGridTextColumn x:Name="klantPlaatsColumn" Binding="{Binding KlantPlaats}" Header="Klant Plaats" Width="SizeToHeader"/>
+                    <DataGridTextColumn x:Name="artsIdColumn" Binding="{Binding ArtsId}" Header="Arts Id" Width="SizeToHeader"/>
+                    <DataGridTextColumn x:Name="medicatieIdColumn" Binding="{Binding MedicatieId}" Header="Medicatie Id" Width="SizeToHeader"/>
+                    <DataGridTextColumn x:Name="verzekeringsIdColumn" Binding="{Binding VerzekeringsId}" Header="Verzekerings Id" Width="SizeToHeader"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid x:Name="huisartsDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource huisartsViewSource}}" Margin="10,208,375,11" RowDetailsVisibilityMode="VisibleWhenSelected">
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="artsIdColumn1" Binding="{Binding ArtsId}" Header="Arts Id" Width="SizeToHeader"/>
+                    <DataGridTextColumn x:Name="artsNaamColumn" Binding="{Binding ArtsNaam}" Header="Arts Naam" Width="SizeToHeader"/>
+                    <DataGridTextColumn x:Name="artsAdresColumn" Binding="{Binding ArtsAdres}" Header="Arts Adres" Width="SizeToHeader"/>
+                    <DataGridTextColumn x:Name="artsPostcodeColumn" Binding="{Binding ArtsPostcode}" Header="Arts Postcode" Width="SizeToHeader"/>
+                    <DataGridTextColumn x:Name="artsPlaatsColumn" Binding="{Binding ArtsPlaats}" Header="Arts Plaats" Width="SizeToHeader"/>
+                    <DataGridTemplateColumn x:Name="contractTotColumn" Header="Contract Tot" Width="SizeToHeader">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <DatePicker SelectedDate="{Binding ContractTot, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
         </Grid>
-        <DataGrid HorizontalAlignment="Left" Height="196" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" ItemsSource="{Binding}" SelectionChanged="DataGrid_SelectionChanged"/>
     </Grid>
 </Window>

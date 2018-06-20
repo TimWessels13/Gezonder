@@ -39,6 +39,17 @@ namespace Gezonder
             System.Windows.Data.CollectionViewSource klantenViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("klantenViewSource")));
             // Load data by setting the CollectionViewSource.Source property:
             // klantenViewSource.Source = [generic data source]
+            Gezonder.ZorgDataSet1 zorgDataSet1 = ((Gezonder.ZorgDataSet1)(this.FindResource("zorgDataSet1")));
+            // Load data into the table Klant. You can modify this code as needed.
+            Gezonder.ZorgDataSet1TableAdapters.KlantTableAdapter zorgDataSet1KlantTableAdapter = new Gezonder.ZorgDataSet1TableAdapters.KlantTableAdapter();
+            zorgDataSet1KlantTableAdapter.Fill(zorgDataSet1.Klant);
+            System.Windows.Data.CollectionViewSource klantViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("klantViewSource")));
+            klantViewSource.View.MoveCurrentToFirst();
+            // Load data into the table Huisarts. You can modify this code as needed.
+            Gezonder.ZorgDataSet1TableAdapters.HuisartsTableAdapter zorgDataSet1HuisartsTableAdapter = new Gezonder.ZorgDataSet1TableAdapters.HuisartsTableAdapter();
+            zorgDataSet1HuisartsTableAdapter.Fill(zorgDataSet1.Huisarts);
+            System.Windows.Data.CollectionViewSource huisartsViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("huisartsViewSource")));
+            huisartsViewSource.View.MoveCurrentToFirst();
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
