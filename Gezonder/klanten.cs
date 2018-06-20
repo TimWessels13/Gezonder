@@ -16,7 +16,7 @@ namespace Gezonder
         public string MedicatieNaam { get; set; }
         public string VerzekeraarNaam { get; set; }
 
-        List<Klanten> lijst = new List<Klanten>();
+       
        
    
 
