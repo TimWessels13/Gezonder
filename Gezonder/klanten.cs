@@ -8,14 +8,14 @@ namespace Gezonder
 {
     class Klanten
     {
-        public int KlantNaam { get; set; }
-        public int KlantAdres { get; set; }
-        public int KlantPostcode { get; set; }
-        public int KlantPlaats { get; set; }
-        public int ArtsNaam { get; set; }
-        public int MedicatieNaam { get; set; }
-        public int VerzekeraarNaam { get; set; }
+        public string KlantNaam { get; set; }
+        public string KlantAdres { get; set; }
+        public string KlantPostcode { get; set; }
+        public string KlantPlaats { get; set; }
+        public string ArtsNaam { get; set; }
+        public string MedicatieNaam { get; set; }
+        public string VerzekeraarNaam { get; set; }
 
-        List<Klanten> K = new List<Klanten>();
+        List<Klanten> lijst = new List<Klanten>();
     }
 }
