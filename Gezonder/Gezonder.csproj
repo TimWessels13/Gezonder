@@ -89,6 +89,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ZorgDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ZorgDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZorgDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Zorgverzekeraars.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -172,6 +177,17 @@
     </None>
     <None Include="ZorgDataSet.xss">
       <DependentUpon>ZorgDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ZorgDataSet1.xsc">
+      <DependentUpon>ZorgDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ZorgDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZorgDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZorgDataSet1.xss">
+      <DependentUpon>ZorgDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
