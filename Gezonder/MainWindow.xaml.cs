@@ -29,5 +29,16 @@ namespace Gezonder
         {
 
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            System.Windows.Data.CollectionViewSource huisartsenViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("huisartsenViewSource")));
+            // Load data by setting the CollectionViewSource.Source property:
+            // huisartsenViewSource.Source = [generic data source]
+            System.Windows.Data.CollectionViewSource klantenViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("klantenViewSource")));
+            // Load data by setting the CollectionViewSource.Source property:
+            // klantenViewSource.Source = [generic data source]
+        }
     }
 }

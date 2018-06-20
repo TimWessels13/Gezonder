@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gezonder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid>
-            <DataGrid HorizontalAlignment="Left" Height="201" Margin="10,208,0,0" VerticalAlignment="Top" Width="388"/>
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <CollectionViewSource x:Key="huisartsenViewSource" d:DesignSource="{d:DesignInstance {x:Type local:Huisartsen}, CreateList=True}"/>
+        <CollectionViewSource x:Key="klantenViewSource" d:DesignSource="{d:DesignInstance {x:Type local:Klanten}, CreateList=True}"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource klantenViewSource}">
+        <Grid DataContext="{StaticResource huisartsenViewSource}">
+            <DataGrid HorizontalAlignment="Left" Height="201" Margin="10,208,0,0" VerticalAlignment="Top" Width="388" ItemsSource="{Binding}"/>
             <Button x:Name="Button1" Content="Verleng contract" HorizontalAlignment="Left" Margin="403,389,0,0" VerticalAlignment="Top" Width="119"/>
             <Label x:Name="Label1" Content="Label" HorizontalAlignment="Left" Margin="403,208,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
             <Label x:Name="Label2" Content="Label" HorizontalAlignment="Left" Margin="403,236,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
@@ -26,6 +30,6 @@
             <Button x:Name="Button2" Content="Print labels" HorizontalAlignment="Left" Margin="533,389,0,0" VerticalAlignment="Top" Width="119"/>
             <Button x:Name="Button3" Content="Wijzig gegevens" HorizontalAlignment="Left" Margin="663,389,0,0" VerticalAlignment="Top" Width="119"/>
         </Grid>
-        <DataGrid HorizontalAlignment="Left" Height="196" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"/>
+        <DataGrid HorizontalAlignment="Left" Height="196" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" ItemsSource="{Binding}"/>
     </Grid>
 </Window>
