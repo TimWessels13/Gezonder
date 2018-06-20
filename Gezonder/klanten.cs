@@ -15,5 +15,7 @@ namespace Gezonder
         public int ArtsNaam { get; set; }
         public int MedicatieNaam { get; set; }
         public int VerzekeraarNaam { get; set; }
+
+        List<Klanten> K = new List<Klanten>();
     }
 }
