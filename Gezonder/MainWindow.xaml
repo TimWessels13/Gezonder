@@ -26,7 +26,6 @@
             <TextBox x:Name="TextBox4" HorizontalAlignment="Left" Height="23" Margin="614,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
             <TextBox x:Name="TextBox5" HorizontalAlignment="Left" Height="23" Margin="614,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
             <TextBox x:Name="TextBox6" HorizontalAlignment="Left" Height="23" Margin="614,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
-            <Label x:Name="Label5_Copy" Content="Label" HorizontalAlignment="Left" Margin="403,320,0,0" VerticalAlignment="Top" Width="168" Height="23"/>
             <Button x:Name="Button2" Content="Print labels" HorizontalAlignment="Left" Margin="533,389,0,0" VerticalAlignment="Top" Width="119"/>
             <Button x:Name="Button3" Content="Wijzig gegevens" HorizontalAlignment="Left" Margin="663,389,0,0" VerticalAlignment="Top" Width="119"/>
         </Grid>
