@@ -22,13 +22,13 @@ namespace Gezonder
 
         public Klanten(string KlantNaam, string KlantAdres, string KlantPostcode, string KlantPlaats, string ArtsNaam, string MedicatieNaam, string  VerzekeraarNaam)
         {
-            this.v1 = v1;
-            this.v2 = v2;
-            this.v3 = v3;
-            this.v4 = v4;
-            this.v5 = v5;
-            this.v6 = v6;
-            this.v7 = v7;
+            this.KlantNaam = KlantNaam;
+            this.KlantAdres = KlantAdres;
+            this.KlantPostcode = KlantPostcode;
+            this.KlantPlaats = KlantPlaats;
+            this.ArtsNaam = ArtsNaam;
+            this.MedicatieNaam = MedicatieNaam;
+            this.VerzekeraarNaam = VerzekeraarNaam;
         }
     }
 }
